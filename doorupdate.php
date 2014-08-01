@@ -1,10 +1,10 @@
 <?php
-t = $GET["time"]
-s = $GET["status"]
+$t = $_GET['time'];
+$s = $_GET['status'];
 
-f = open("door.txt", "a+")
-f.write("$t,$s\n")
-f.close()
+$f = fopen("door.txt", "a+");
+fwrite($f, "$t,$s\n");
+fclose($f);
 ?>UPDATED OK
 
 
